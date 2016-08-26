@@ -11,7 +11,6 @@ class Button():
 		self.msg_image = self.font.render(msg,True,self.text_color,self.bg_color)
 		self.rect = self.msg_image.get_rect()
 		self.rect.center = self.screen_rect.center
-		pygame.image.save(self.msg_image,"./images/a.bmp")
 	def draw(self):	
 		self.screen.blit(self.msg_image,self.rect)
 		
